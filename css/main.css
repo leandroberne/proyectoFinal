@@ -1,0 +1,402 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black; }
+
+/* HEADER */
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: lightcoral;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 1px 1px 3px white; }
+  .header__container {
+    width: 75%;
+    height: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-areas: "extra1 logo menuNav extra2";
+    grid-template-columns: 5% 45% 46% 4%; }
+  .header__logo {
+    grid-area: logo;
+    line-height: 80px; }
+    .header__logo span {
+      color: white;
+      font-family: "Blinker", sans-serif;
+      font-size: 40px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      cursor: pointer;
+      text-shadow: 4px 3px 0 #7A7A7A; }
+
+.menuNav {
+  grid-area: menuNav; }
+  .menuNav__lista {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-items: center;
+    padding: 0; }
+  .menuNav ul li {
+    transition: all 300ms; }
+  .menuNav__item {
+    color: white;
+    font-family: "Blinker", sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 80px;
+    transition: all 300ms; }
+    .menuNav__item:hover {
+      color: grey; }
+
+/* MAIN */
+.main {
+  width: 100%;
+  background-color: black; }
+  .main__dummy {
+    height: 80px;
+    background-color: black; }
+  .main__container {
+    width: 75%;
+    margin: 0px auto; }
+  .main__titulo, .hcard__gracias {
+    color: white;
+    font-family: "Blinker", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .main__subtitulo {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 25px; }
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: lightcoral; }
+  .footer__container {
+    background-color: lightcoral;
+    height: 100%;
+    text-align: center; }
+  .footer__espacio {
+    height: 20px; }
+  .footer__logo {
+    color: white;
+    font-family: "Blinker", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 9px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-shadow: 4px 3px 0 #7A7A7A; }
+  .footer__parrafo {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    margin-bottom: 22px;
+    cursor: pointer;
+    transition: all 300ms; }
+    .footer__parrafo:hover {
+      color: #7A7A7A; }
+  .footer__social {
+    width: 200px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    justify-items: center; }
+    .footer__social .fab {
+      font-size: 40px;
+      color: grey;
+      transition: all 300ms; }
+      .footer__social .fab:hover {
+        color: white;
+        cursor: pointer; }
+
+/* INDEX */
+#carouselExampleIndicators {
+  margin: 0px auto; }
+  #carouselExampleIndicators img {
+    border: 1px solid white; }
+
+#formIndex {
+  width: 400px;
+  margin: 0px auto;
+  margin-bottom: 40px; }
+  #formIndex .far {
+    color: lightcoral; }
+
+/* PRODUCTOS */
+.cardContainer {
+  width: 100%;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center; }
+
+.pcard {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 400ms; }
+  .pcard__img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid white; }
+  .pcard__titulo {
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 1px; }
+  .pcard__parrafo, .pcard__precio {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a7a7a7;
+    margin-top: 5px; }
+  .pcard__precio {
+    font-weight: bold;
+    color: white; }
+  .pcard:hover {
+    transform: translate(0px, -15px);
+    box-shadow: 0px 0px 7px white; }
+
+/* NOSOTROS */
+.scard1, .scard2 {
+  width: 80%;
+  height: 260px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  display: grid;
+  justify-items: start;
+  grid-template-areas: "foto e1 texto e2";
+  grid-template-columns: 25% 5% 65% 5%;
+  align-items: center; }
+  .scard1__img {
+    grid-area: foto; }
+  .scard1__info {
+    grid-area: texto;
+    color: white; }
+  .scard1__nombre, .scard2__nombre {
+    font-family: "Blinker", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 0; }
+  .scard1__cargo, .scard2__cargo {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white; }
+  .scard1__descripcion, .scard2__descripcion {
+    text-align: start;
+    color: #a7a7a7; }
+
+.scard2 {
+  justify-items: end;
+  grid-template-areas: "e1 texto e2 foto";
+  grid-template-columns: 5% 65% 5% 25%; }
+  .scard2__img {
+    grid-area: foto; }
+  .scard2__info {
+    grid-area: texto;
+    color: white; }
+  .scard2__nombre {
+    text-align: end; }
+  .scard2__cargo {
+    text-align: end; }
+  .scard2__descripcion {
+    text-align: end; }
+
+.scardBetween {
+  height: 20px; }
+
+/* HISTORIA */
+.hcard {
+  width: 100%;
+  height: 640px;
+  margin: 0px auto;
+  margin-bottom: 40px;
+  display: grid;
+  justify-items: start;
+  grid-template-areas: "foto e1 texto e2";
+  grid-template-columns: 25% 10% 65% 0%;
+  align-items: start; }
+  .hcard__img {
+    grid-area: foto; }
+  .hcard__texto {
+    grid-area: texto; }
+  .hcard__descripcion {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    text-align: start;
+    letter-spacing: 2px;
+    color: white; }
+  .hcard__gracias {
+    margin: 0px auto;
+    margin-top: 40px; }
+
+/* CONTACTO */
+.btn-danger {
+  background-color: #db5a5a !important;
+  width: 100px; }
+
+.btn-danger:hover {
+  background-color: #cf0b0b !important;
+  transition: 0.5s; }
+
+#exampleFormControlTextarea1 {
+  height: 200px; }
+
+.contactoDebajo {
+  width: 100%;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  justify-items: center; }
+  .contactoDebajo div {
+    cursor: pointer;
+    display: grid;
+    justify-items: center; }
+    .contactoDebajo div .fas, .contactoDebajo div .far {
+      color: lightcoral;
+      font-size: 160px;
+      margin: 0px auto;
+      transition: all 500ms; }
+    .contactoDebajo div p {
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 25px; }
+    .contactoDebajo div .fa-map-marker-alt:hover {
+      color: red; }
+    .contactoDebajo div .fa-envelope:hover {
+      color: blue; }
+    .contactoDebajo div .fa-phone-alt:hover {
+      color: green; }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1638px) {
+  .header__container {
+    width: 100%; }
+  .main__container {
+    width: 100%; }
+  .footer__container {
+    width: 100%; }
+  .cardContainer {
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px; }
+  .pcard {
+    margin-bottom: 138px; }
+  .scard1, .scard2 {
+    width: 85%; }
+  .hcard {
+    width: 95%; } }
+
+@media only screen and (max-width: 1303px) {
+  .header {
+    height: 150px;
+    position: static;
+    z-index: 0; }
+  .header__container {
+    grid-template-areas: "logo" "menuNav";
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    justify-items: center; }
+  .header__logo {
+    grid-area: logo; }
+  .main__dummy {
+    display: none; }
+  .menuNav {
+    grid-area: menuNav; }
+  .menuNav ul li {
+    margin-left: 22%;
+    margin-right: 22%; }
+  .menuNav__item {
+    font-size: 32px; }
+  .hcard {
+    grid-template-areas: "foto e1 texto e2";
+    grid-template-columns: 25% 5% 65% 5%;
+    height: auto; }
+    .hcard__img {
+      width: 100%; } }
+
+@media only screen and (max-width: 1133px) {
+  .header {
+    height: 513px; }
+  .header__container {
+    grid-template-areas: "logo" "menuNav" "menuNav" "menuNav" "menuNav" "menuNav";
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    justify-items: center; }
+  .header__logo {
+    grid-area: logo; }
+  .header__logo span {
+    font-size: 55px; }
+  .menuNav {
+    grid-area: menuNav; }
+  .menuNav__lista {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    justify-items: center; }
+  .menuNav__item {
+    color: white;
+    font-family: "Blinker", sans-serif;
+    letter-spacing: 2px;
+    line-height: 80px; }
+  #carouselExampleIndicators {
+    width: 100%; }
+  .contactoDebajo {
+    grid-template-columns: 100%;
+    margin-bottom: 400px; }
+  .scard1, .scard2 {
+    width: 80%;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: "e1 foto e2" "e1 texto e2";
+    grid-template-columns: 5% 90% 5%; }
+    .scard1__img {
+      margin: 0px auto;
+      margin-bottom: 15px; }
+    .scard1__nombre, .scard2__nombre {
+      text-align: center; }
+    .scard1__cargo, .scard2__cargo {
+      text-align: center; }
+    .scard1__descripcion, .scard2__descripcion {
+      text-align: center; }
+  .scard2__img {
+    margin-bottom: 15px; }
+  .scard2__nombre {
+    text-align: center; }
+  .scard2__cargo {
+    text-align: center; }
+  .scard2__descripcion {
+    text-align: center; }
+  .hcard {
+    grid-template-areas: "e1 foto e2" "e1 texto e2" "e1 texto2 e2";
+    grid-template-columns: 5% 90% 5%; }
+    .hcard__descripcion {
+      margin-top: 20px;
+      text-align: center; }
+    .hcard__gracias {
+      text-align: center; } }
+
+@media only screen and (max-width: 660px) {
+  .cardContainer {
+    grid-template-columns: 100%;
+    margin-bottom: 10px; } }
